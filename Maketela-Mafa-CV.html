@@ -5,6 +5,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mafa Maketela - CV</title>
     <style>
+        @page {
+            size: A4;
+            margin: 20mm;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 20px;
+            page-break-after: avoid;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        h2 {
+            color: #3498db;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            page-break-after: avoid;
+        }
+        h3 {
+            color: #2980b9;
+            margin-bottom: 5px;
+            page-break-after: avoid;
+        }
+        .subtitle {
+            font-weight: normal;
+            color: #7f8c8d;
+            margin-top: 0;
+        }
+        .section {
+            margin-bottom: 20px;
+            background-color: white;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            page-break-inside: avoid;
+            break-inside: avoid;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .contact-item {
+            flex-basis: 48%;
+            margin-bottom: 10px;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-column {
+            flex-basis: 48%;
+        }
+        .achievement {
+            margin-bottom: 10px;
+            page-break-inside: avoid;
+        }
+        .achievement-title {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .achievement-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        .project {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .project-title {
+            font-weight: bold;
+        }
+        .reference {
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+        .reference-name {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        /* Ensure sections start on new page if they won't fit */
+        .page-break {
+            page-break-before: always;
+        }
+        /* Prevent orphans and widows */
+        p, li {
+            orphans: 3;
+            widows: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mafa Maketela</h1>
+        <p class="subtitle">BSc Computer Science graduate | University of the Western Cape</p>
+    </div>
+
+    <div class="section">
+        <p><strong>Summary:</strong> I'm a dedicated BSc Computer Science graduate with a passion for software development, data analysis, and the Microsoft Power Platform. Right now, I'm working towards my PL-400 certification (after already achieving the PL-200 certification) and I've gained hands-on experience with Power Apps, Power Automate, and Dataverse. I'm well-versed in full-stack development, including tools like React.js, Node.js, Java, and Python, along with database management skills in SQL and MySQL. I thrive as a team player on mobile and web app projects and have earned certifications in C#, Dynamics 365, and automation tools. What sets me apart is my combination of technical know-how and strong communication skills, which I've honed through tutoring and professional experiences. I'm excited to bring my Power Platform and development skills to innovative tech settings where I can make an impact.</p>
+    </div>
+
+    <div class="section">
+        <h2>Contacts</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Email:</strong> 3819708@mywc.ac.za<br>
+                <a href="mailto:maketela.mafa2@gmail.com">maketela.mafa2@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Phone:</strong> 073 187 4276<br>
+                + 071 220 8870
+            </div>
+            <div class="contact-item">
+                <strong>LinkedIn:</strong> <a href="#">mafa-linkedin-profile</a>
+            </div>
+            <div class="contact-item">
+                <strong>Physical Address:</strong><br>
+                4446 Umnga Crescent<br>
+                Langa, Cape Town<br>
+                7456
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-column">
+                <ul>
+                    <li><strong>Programming Languages:</strong> Python, Java, JavaScript</li>
+                    <li><strong>Front-End Development:</strong> HTML, CSS, JavaScript, React.js</li>
+                    <li><strong>Back-End Development:</strong> Node.js, Express</li>
+                </ul>
+            </div>
+            <div class="skills-column">
+                <ul>
+                    <li><strong>Database Management:</strong> SQL, MySQL</li>
+                    <li><strong>Data Analysis:</strong> Pandas, NumPy, Matplotlib</li>
+                    <li><strong>Version Control:</strong> Git</li>
+                    <li><strong>Problem Solving and Algorithm Design</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Education</h2>
+        <p><strong>Bachelor of Science in Computer Science</strong><br>
+        University of the Western Cape, Western Cape<br>
+        Completed December 2023</p>
+        
+        <p><strong>Relevant Courses:</strong> Real Analysis, Complex Analysis, Modern Algebra, Machine Learning, Relational Databases, Software Engineering, Computer Architecture, Computer Networking and Human Computer Interaction.</p>
+    </div>
+
+    <div class="section">
+        <h2>Experience</h2>
+        <h3>MATHEMATICS TUTOR</h3>
+        <p><strong>University of the Western Cape</strong> | Mar 2021-Nov 2021</p>
+        <ul>
+            <li>Encouraging independent learning to tutees</li>
+            <li>Marking of tutorial tasks</li>
+            <li>Keeping accurate records</li>
+            <li>Giving regular feedback to tutees</li>
+        </ul>
+        <h3>MICROSOFT POWER PLATFORM DEVELOPER</h3>
+        <p><strong>African Ideas</strong> | Aug 2024 - Current</p>
+        <ul>
+            <li>Assist in Development & Automation</li>
+            <li>Debug, Test & Optimize Solutions</li>
+            <li>Collaborate with Teams</li>
+            <li>Explore Integrations</li>
+            <li>Work on Real Projects</li>
+            <li>Upskill & Certifications</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <p class="project-title">Qhuba</p>
+            <p>Developing an android application using Android studio, java and MYSQL, the mobile application will take input from user about business and make simple financial analysis from input.</p>
+        </div>
+        <div class="project">
+            <p class="project-title">Voting Engineering System</p>
+            <p>Collaborated in a team to create a mobile application using java and MYSQL to make it possible for South African citizens to vote using their smart phones.</p>
+        </div>
+        <div class="project">
+            <p class="project-title">Promotional website</p>
+            <p>Collaborated in a team to create a promotional website using react.js, node.js, html.css and javascript, the website attracts customers for a business which focuses on designing and setting the designs.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Achievements</h2>
+        <div class="achievement">
+            <p class="achievement-title">PL-200 (Power Platform Functional Consultant Associate)</p>
+            <p>Microsoft Certified| <span class="achievement-date">2025-01-09</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">MS-PL7002 - Certificate of Attendance (Create and Manage Automated Processes by using Power Automate)</p>
+            <p>Mecer Inter-Ed| <span class="achievement-date">2025-03-27</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">MS-PL400T00 - Certificate of Attendance (Microsoft Power Platform Developer)</p>
+            <p>Mecer Inter-Ed| <span class="achievement-date">2025-03-07</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">MS-PL200T00 - Certificate of Attendance (Microsoft Power Platform Functional Consultant (Incl. Applied Workshop))</p>
+            <p>Mecer Inter-Ed| <span class="achievement-date">2024-11-15</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">MS-MB910T00 - Certificate of Attendance (Microsoft Dynamics 365 Fundamentals Customer Engagement Apps)</p>
+            <p>Mecer Inter-Ed| <span class="achievement-date">2024-10-18</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">MS-55339 - Certificate of Attendance (Programming in C#)</p>
+            <p>Mecer Inter-Ed| <span class="achievement-date">2024-10-11</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">CERTIFICATION OF TEMPORAL 101 WITH PYTHON</p>
+            <p>Temporal | <span class="achievement-date">28 Nov 2023</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">CERTIFICATION OF TWO WEEK CODING FOUNDATIONS BOOTCAMP INTRODUCTION TO FUNCTIONS WITH JAVASCRIPT</p>
+            <p>CodeX | <span class="achievement-date">13 Feb 2023 to 24 Feb 2023</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">CERTIFICATION OF PARTICIPATION FOR SUCCESSFULLY COMPLETING GRADUATE DEVELOPMENT PROGRAMME</p>
+            <p>Center of Student Support Services (UWC) | <span class="achievement-date">Nov 2018</span></p>
+        </div>
+        <div class="achievement">
+            <p class="achievement-title">CERTIFICATE OF BEST TEAMWORK</p>
+            <p>Introduction to Science | <span class="achievement-date">Nov 2018</span></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Interests</h2>
+        <ul>
+            <li>MS Power Platform Developer</li>
+            <li>Open-Source Contribution</li>
+            <li>Software Development</li>
+            <li>Data Analysis</li>
+            <li>ICT professions</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Running</li>
+            <li>Gaming</li>
+            <li>Tutoring</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Personal Skills</h2>
+        <ul>
+            <li>Organized, Time management, Fast learner, Motivated, Reliable and professional</li>
+            <li>Good communication skills</li>
+            <li>Can work with team</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>References</h2>
+        <div class="reference">
+            <p class="reference-name">DR DEON SOLOMONS</p>
+            <p>Senior lecturer on the Department of Mathematics and Applied Mathematics at the University of the Western Cape</p>
+            <p>Lecturer's 3rd year and Honours Mathematics</p>
+            <p>Landline: 021 551 3028 | Cell: 060 740 8000</p>
+        </div>
+        <div class="reference">
+            <p class="reference-name">NKOSIKHONA CELE</p>
+            <p>Mentor/ Supervisor at African Ideas</p>
+            <p>Intermediate Power Platform Developer | Power Apps | Power Automate | Power BI | Dataverse | SharePoint</p>
+            <p>PL-200 | PL-300 | PL-400 | PL-600</p>
+            <p>Cell: +27 83 366 0169</p>
+        </div>
+        <div class="reference">
+            <p class="reference-name">MRS MOLEDHENG MAKETELA</p>
+            <p>Aunt</p>
+            <p>Cell: 065 236 0173</p>
+            <p>Email: <a href="mailto:queenmakteia@icloud.com">queenmakteia@icloud.com</a></p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mafa Maketela - CV</title>
+    <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
@@ -311,4 +642,4 @@
 
 
 
-
+ -->
